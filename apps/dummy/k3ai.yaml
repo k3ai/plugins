@@ -2,6 +2,7 @@ api: k3ai.in/v1alpha1
 kind: Application
 metadata:
   name: dummy
+  desc: "This is a short description of the dummy plugin. It's long enough to require trim the message but is not too much long anyway...blah,blah,blah"
   version: v0.0.0
   type: kustomize
 resources:
