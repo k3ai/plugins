@@ -9,8 +9,8 @@ resources:
 - ../common/cert-manager/
 - ../common/istio/
 # Application logic
-- url: "http://a.b.c"
-- url: "http://d.e.f"
+- "http://a.b.c"
+- "http://d.e.f"
 # Post Requisites
 - overlays/ingress.yaml
 - overlays/rbac.yaml
