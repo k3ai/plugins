@@ -5,5 +5,13 @@ metadata:
   version: v0.0.0
   type: kustomize
 resources:
-  - url: "http://a.b.c"
-  - url: "http://d.e.f"
+# Pre Requisites
+- ../common/cert-manager/
+- ../common/istio/
+# Application logic
+- url: "http://a.b.c"
+- url: "http://d.e.f"
+# Post Requisites
+- overlays/ingress.yaml
+- overlays/rbac.yaml
+
