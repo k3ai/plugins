@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: {Application|Infra|Bundle}
+metadata:
+  name: {Name}
+  desc: {Description}
+  tag: {filterTag}
+  version: {version}
+resources:
+- {pathOrUrl}

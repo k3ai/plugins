@@ -1,0 +1,13 @@
+api: k3ai.in/v1alpha1
+kind: {Application|Infra|Bundle}
+
+resources:
+- path: {pathOrUrl}
+  type: {kustomize|kubectl|shell|posh}
+  wait: {true|false}
+- path: {pathOrUrl}
+  type: {kustomize|kubectl|shell|posh}
+  wait: {true|false}
+- path: {pathOrUrl}
+  type: {kustomize|kubectl|shell|posh}
+  wait: {true|false}
