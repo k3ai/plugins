@@ -4,5 +4,6 @@ kind: Infra
 resources:
 - path: "curl -Lo /tmp/kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64 && chmod +x /tmp/kind && sudo mv /tmp/kind /usr/local/bin && kind create cluster"
   args: ""
+  kubeconfig: ""
   type: shell
   wait: true
