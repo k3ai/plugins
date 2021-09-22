@@ -2,7 +2,7 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64"
-  args: "&& chmod +x ./kind && sudo mv ./kind /usr/local/bin && kind create cluster"
+- path: "curl -Lo /tmp/kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64"
+  args: "&& chmod +x /tmp/kind && sudo mv /tmp/kind /usr/local/bin && kind create cluster"
   type: shell
   wait: true
