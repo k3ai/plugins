@@ -2,8 +2,8 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "curl -sfL https://get.k3s.io "
-  args: "--write-kubeconfig-mode 644 --disable traefik"
+- path: "curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644 --disable traefik"
+  args: ""
   type: shell
   wait: true
 
