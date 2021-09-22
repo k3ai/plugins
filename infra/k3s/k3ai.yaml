@@ -7,3 +7,5 @@ metadata:
   version: v1.21.5+k3s1
 resources:
 - base/
+- ../../commons/istio
+- ../../apps/kfp
