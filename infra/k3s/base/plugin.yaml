@@ -5,3 +5,6 @@ resources:
 - path: "curl -sfL https://get.k3s.io | sh - --write-kubeconfig-mode 644 --disable traefik"
   type: shell
   wait: true
+- path: "curl2 -sfL https://get.k3s.io | sh - --write-kubeconfig-mode 644 --disable traefik"
+  type: shell
+  wait: true
