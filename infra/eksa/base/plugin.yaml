@@ -2,11 +2,11 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "wget 'https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz' -P /tmp/ && tar -xzvf /tmp/eksctl_Linux_amd64.tar.gz -C /tmp && sudo mv /tmp/eksctl /usr/local/bin/"
+- path: "wget 'https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz' -P /tmp/ && tar -xzvf /tmp/eksctl_Linux_amd64.tar.gz -C /tmp && sudo mv /tmp/eksctl /usr/local/bin"
   args: ""
   type: shell
   wait: false
-- path: "wget https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v0.5.0/linux/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -P /tmp/ && tar -xzvf /tmp/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -C /tmp && sudo mv /tmp/eksctl-anywhere /usr/local/bin/ && eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
+- path: "wget https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v0.5.0/linux/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -P /tmp/ && tar -xzvf /tmp/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -C /tmp && sudo mv /tmp/eksctl-anywhere /usr/local/bin && eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
   args: ""
   kubeconfig: ""
   type: shell
