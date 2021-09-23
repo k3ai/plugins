@@ -2,7 +2,7 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "wget 'https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz' -P /tmp/ && tar -xzvf /tmp/eksctl_Linux_amd64.tar.gz && sudo mv /tmp/eksctl /usr/local/bin/"
+- path: "wget https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz -P /tmp/ && tar -xzvf /tmp/eksctl_Linux_amd64.tar.gz && sudo mv /tmp/eksctl /usr/local/bin/"
   args: ""
   type: shell
   wait: true
