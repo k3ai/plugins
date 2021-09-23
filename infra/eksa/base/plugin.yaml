@@ -11,7 +11,7 @@ resources:
   kubeconfig: ""
   type: shell
   wait: false
-- path: "sudo mv /tmp/eksctl-anywhere /usr/local/bin && eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
+- path: "sudo mv /tmp/eksctl-anywhere /usr/local/bin/eksctl-anywhere && eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
   args: ""
   kubeconfig: ""
   wait: false
