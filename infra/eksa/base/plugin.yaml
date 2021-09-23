@@ -2,7 +2,7 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "curl -Lo /tmp/eksctl_$(uname -s)_amd64.tar.gz 'https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz' && tar -xvzf /tmp/eksctl_$(uname -s)_amd64.tar.gz sudo mv /tmp/eksctl /usr/local/bin/"
+- path: "curl -Lo /tmp/eksctl_$(uname -s)_amd64.tar.gz 'https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz' && tar -xvzf /tmp/eksctl_$(uname -s)_amd64.tar.gz && sudo mv /tmp/eksctl /usr/local/bin/"
   args: ""
   type: shell
   wait: true
