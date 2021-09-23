@@ -6,12 +6,12 @@ resources:
   args: ""
   type: shell
   wait: false
-- path: "wget https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v0.5.0/linux/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -P /tmp/ && tar -xzvf /tmp/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -C /tmp && sudo mv /tmp/eksctl-anywhere /usr/local/bin"
+- path: "wget https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v0.5.0/linux/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -P /tmp/ && tar -xzvf /tmp/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -C /tmp "
   args: ""
   kubeconfig: ""
   type: shell
   wait: false
-- path: "eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
+- path: "sudo mv /tmp/eksctl-anywhere /usr/local/bin && eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
   args: ""
   kubeconfig: ""
   wait: false
