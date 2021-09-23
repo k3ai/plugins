@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Infra
+
+resources:
+- path: "curl https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v${EKSA_RELEASE}/linux/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz  --silent --location | tar xz ./eksctl-anywhere sudo mv ./eksctl-anywhere /usr/local/bin/ && eksctl anywhere generate clusterconfig dev-cluster --provider docker > dev-cluster.yaml && eksctl anywhere create cluster -f dev-cluster.yaml"
+  args: ""
+  kubeconfig: "/etc/rancher/k3s/k3s.yaml"
+  type: shell
+  wait: true
+
