@@ -7,4 +7,5 @@ resources:
   kubeconfig: "/etc/rancher/k3s/k3s.yaml"
   type: shell
   wait: true
+  remove: "k3s-uninstall.sh"
 
