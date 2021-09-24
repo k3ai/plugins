@@ -14,5 +14,5 @@ resources:
 - path: "eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
   args: ""
   kubeconfig: ""
-  wait: false
+  wait: true
 
