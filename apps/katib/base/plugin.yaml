@@ -1,13 +1,22 @@
 api: k3ai.in/v1alpha1
-kind: {Application|Infra|Bundle}
+kind: Application
 
 resources:
-- path: {pathOrUrl}
-  type: {kustomize|kubectl|shell|posh}
-  wait: {true|false}
-- path: {pathOrUrl}
-  type: {kustomize|kubectl|shell|posh}
-  wait: {true|false}
-- path: {pathOrUrl}
-  type: {kustomize|kubectl|shell|posh}
-  wait: {true|false}
+- path: "https://github.com/kubeflow/manifests/tree/master/common/cert-manager/cert-manager/base"
+  type: kustomize
+  wait: true
+- path: "https://github.com/kubeflow/manifests/tree/master/common/cert-manager/kubeflow-issuer/base"
+  type: kustomize
+  wait: false
+- path: "https://github.com/kubeflow/manifests/tree/master/common/istio-1-9/istio-crds/base"
+  type: kustomize
+  wait: false
+- path: "https://github.com/kubeflow/manifests/tree/master/common/istio-1-9/istio-namespace/base"
+  type: kustomize
+  wait: false
+- path: "https://github.com/kubeflow/manifests/tree/master/common/istio-1-9/istio-install/base"
+  type: kustomize
+  wait: true
+- path: "https://github.com/kubeflow/manifests/tree/master/apps/katib/upstream/installs/katib-with-kubeflow"
+  type: kustomize
+  wait: true

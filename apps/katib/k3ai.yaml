@@ -1,9 +1,9 @@
 api: k3ai.in/v1alpha1
-kind: {Application|Infra|Bundle}
+kind: Application
 metadata:
-  name: {Name}
-  desc: {Description}
-  tag: {filterTag}
-  version: {version}
+  name: Katib
+  desc: "Katib is a Kubernetes-native project for automated machine learning (AutoML). Katib supports Hyperparameter Tuning, Early Stopping and Neural Architecture Search."
+  tag: kubeflow
+  version: v0.12.0-rc.1
 resources:
-- {pathOrUrl}
+- base/
