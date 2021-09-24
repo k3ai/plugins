@@ -4,9 +4,7 @@ kind: {Application|Infra|Bundle}
 resources:
 - path: {pathOrUrl}
   type: {kustomize|kubectl|shell|posh}
-  kubeconfig: {path}
   wait: {true|false}
-  remove: {path}
 - path: {pathOrUrl}
   type: {kustomize|kubectl|shell|posh}
   wait: {true|false}
