@@ -7,3 +7,4 @@ resources:
   kubeconfig: ""
   type: shell
   wait: true
+  remove: "kind delete cluster"
