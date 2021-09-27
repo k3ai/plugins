@@ -7,5 +7,3 @@ metadata:
   version: v1.21.5+k3s2
 resources:
 - base/
-- ../../commons/istio
-- https://www.suse.com/baseimage
