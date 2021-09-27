@@ -6,7 +6,7 @@ metadata:
   tag: kubeflow
   version: v0.12.0-rc.1
 resources:
-- ../../commons/kubeflow
-- ../../commons/cert-manager
-- ../../commons/istio
+- ../../common/kubeflow
+- ../../common/cert-manager
+- ../../common/istio
 - base/
