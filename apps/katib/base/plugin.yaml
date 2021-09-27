@@ -3,6 +3,9 @@ kind: Application
 
 resources:
 - path: "https://github.com/kubeflow/manifests"
+  args: "common/kubeflow-namespace/base"
+  wait: false
+- path: "https://github.com/kubeflow/manifests"
   args: "common/cert-manager/cert-manager/base"
   type: kustomize
   wait: false
