@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: Cert-manager
+  desc: "Certification Manager for Kubernetes"
+  tag: kubeflow
+  version: v0.0.0
+resources:
+- base/

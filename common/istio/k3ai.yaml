@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: Istio
+  desc: "Istio configurations (Kubeflow)"
+  tag: kubeflow
+  version: v1.9
+resources:
+- base/
