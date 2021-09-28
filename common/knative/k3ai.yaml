@@ -1,8 +1,8 @@
 api: k3ai.in/v1alpha1
 kind: Application
 metadata:
-  name: Cert-manager
-  desc: "Certification Manager for Kubernetes"
+  name: knative
+  desc: "Kubernetes-based platform to deploy and manage modern serverless workloads."
   tag: kubeflow
   version: latest
 resources:

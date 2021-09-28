@@ -4,6 +4,6 @@ metadata:
   name: Kubeflow
   desc: "Kubeflow settings for various sub-configurations"
   tag: kubeflow
-  version: v1.3
+  version: latest
 resources:
 - base/
