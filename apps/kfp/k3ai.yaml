@@ -1,0 +1,12 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: KFP
+  desc: "Kubeflow Pipelines is a platform for building and deploying portable, scalable machine learning (ML) workflows based on Docker containers."
+  tag: kubeflow
+  version: 
+resources:
+- ../../common/kubeflow
+- ../../common/cert-manager
+- ../../common/istio
+- base/
