@@ -38,3 +38,5 @@ resources:
   args: "apps/katib/upstream/installs/katib-with-kubeflow"
   type: kustomize
   wait: false
+- path: post
+  args: "kubectl patch svc svc/katib-ui  -n kubeflow -p '{'spec': {'type': 'LoadBalancer'}}'"
