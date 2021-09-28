@@ -39,5 +39,5 @@ resources:
   type: kustomize
   wait: false
 - path: post
-  args: "kubectl patch svc/katib-ui  -n kubeflow -p '{'spec': {'type': 'LoadBalancer'}}'"
+  args: "kubectl patch svc/katib-ui  -n kubeflow -p '{\"spec\": {\"type\": \"LoadBalancer\"}}'"
   type: shell
