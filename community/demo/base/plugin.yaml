@@ -2,10 +2,6 @@ api: k3ai.in/v1alpha1
 kind: Application
 
 resources:
-- path: "https://github.com/kubeflow/manifests"
-  args: "apps/katib/upstream/installs/katib-with-kubeflow"
-  type: kustomize
-  wait: false
 - path: post
   args: "kubectl patch svc katib-ui  -n kubeflow -p $'spec:\n type: LoadBalancer'"
   type: shell
