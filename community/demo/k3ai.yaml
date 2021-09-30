@@ -1,9 +1,0 @@
-api: k3ai.in/v1alpha1
-kind: Application
-metadata:
-  name: demo
-  desc: "This is a demo plugin"
-  tag: kubeflow
-  version: latest
-resources:
-- base/
