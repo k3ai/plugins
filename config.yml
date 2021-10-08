@@ -10,9 +10,9 @@ plugins:
 #[CLUSTERS] Section. Change types to constrain the user to a single or few cluster types. Community works as above.
 clusters:
     types:
-        - all: "true"
-#       - k3s: "true"
-#       - eksa: "true"
-#       - kind: "true"
-#       - tanzu: "true"
+        - all: true
+#       - k3s: true
+#       - eksa: true
+#       - kind: true
+#       - tanzu: true
     community: false
