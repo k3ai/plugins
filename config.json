@@ -4,7 +4,7 @@
         "cluster_types": "all"
     },
     "plugins": {
-    "base url": null,
+    "base url": "",
     "community": false
     },
     "clusters": {
