@@ -14,8 +14,6 @@
     "clusters": {
         "k3s": false,
         "eksa": false,
-        "kind": true,
-        "tanzu": true,
-        "community": false
+        "kind": true
     }
 }
