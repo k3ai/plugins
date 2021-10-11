@@ -1,11 +1,15 @@
 {
     "default": {
-        "base_url": "https://github.com/k3ai/plugins",
+        "baseUser": "k3ai",
+        "baseRepo": "plugins",
+        "baseUrl": "https://github.com/",
         "cluster_types": "all"
     },
     "plugins": {
-    "base url": "",
-    "community": false
+        "baseUser": "",
+        "baseRepo": "",
+        "baseUrl": "",
+        "community": false
     },
     "clusters": {
         "k3s": false,
