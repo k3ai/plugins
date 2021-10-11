@@ -1,0 +1,18 @@
+#This is the k3ai configuration file.
+#The file may be modified based on the k3ai documentation https://docs.k3ai.in
+
+#[PLUGINS] Section. Change/Add the URL to point to your private repos.May be more than one.
+#If community is set to true also the community plugins will be listed through k3ai plugin list
+plugins:
+    repos:
+      - url: "https://github.com/k3ai/plugins"
+    community: false
+#[CLUSTERS] Section. Change types to constrain the user to a single or few cluster types. Community works as above.
+clusters:
+    types:
+        - all: true
+#       - k3s: true
+#       - eksa: true
+#       - kind: true
+#       - tanzu: true
+    community: false
