@@ -5,6 +5,7 @@ metadata:
   desc: "Katib is a Kubernetes-native project for automated machine learning (AutoML). Katib supports Hyperparameter Tuning, Early Stopping and Neural Architecture Search."
   tag: kubeflow
   version: v.0.1
+  status: "Available"
 resources:
 - ../../common/kubeflow
 - ../../common/cert-manager

@@ -5,6 +5,7 @@ metadata:
   desc: "Kubeflow Pipelines is a platform for building and deploying portable, scalable machine learning (ML) workflows based on Docker containers."
   tag: kubeflow
   version: latest
+  status: "Available"
 resources:
 - ../../common/kubeflow
 - ../../common/cert-manager
