@@ -11,9 +11,10 @@ resources:
   kubeconfig: ""
   type: shell
   wait: false
-- path: "eksctl anywhere generate clusterconfig dev-cluster --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
+- path: "eksctl anywhere generate clusterconfig {{name}} --provider docker > /tmp/dev-cluster.yaml && eksctl anywhere create cluster -f /tmp/dev-cluster.yaml"
   args: ""
   kubeconfig: ""
   type: shell
   wait: true
+  remove: "eksctl anywhere delete cluster -f {{name}}/{{name}}-eks-a-cluster.yaml"
 
