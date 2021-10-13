@@ -2,7 +2,7 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: " {{name}} curl -H 'Accept: application/vnd.github.v3.raw' -L https://api.github.com/repos/vmware-tanzu/community-edition/contents/hack/get-tce-release.sh | bash -s <RELEASE-VERSION> <RELEASE-OS-DISTRIBUTION>"
+- path: " curl -H 'Accept: application/vnd.github.v3.raw' -L https://api.github.com/repos/vmware-tanzu/community-edition/contents/hack/get-tce-release.sh | bash -s <RELEASE-VERSION> <RELEASE-OS-DISTRIBUTION>"
   args: ""
   kubeconfig: ""
   type: shell
