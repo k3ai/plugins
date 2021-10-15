@@ -3,7 +3,7 @@ kind: Application
 
 resources:
 - path: "https://github.com/kubeflow/manifests"
-  args: "apps/pipeline/upstream/env/platform-agnostic-multi-user-pns"
+  args: "apps/pipeline/upstream/env/platform-agnostic-pns"
   type: kustomize
   wait: true
 # - path: post
