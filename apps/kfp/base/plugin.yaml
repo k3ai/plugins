@@ -3,37 +3,9 @@ kind: Application
 
 resources:
 - path: "https://github.com/kubeflow/manifests"
-  args: "common/kubeflow-namespace/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/kubeflow-roles/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/cert-manager/kubeflow-issuer/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/istio-1-9/istio-crds/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/istio-1-9/istio-namespace/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/istio-1-9/istio-install/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/istio-1-9/kubeflow-istio-resources/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
   args: "apps/pipeline/upstream/env/platform-agnostic-multi-user-pns"
   type: kustomize
-  wait: false
-- path: post
-  args: "kubectl patch svc ml-pipeline-ui  -n kubeflow -p $'spec:\n type: LoadBalancer'"
-  type: shell
+  wait: true
+# - path: post
+#   args: "kubectl patch vs ml-pipeline-ui  -n kubeflow -p $'spec:\n host: LoadBalancer'"
+#   type: shell
