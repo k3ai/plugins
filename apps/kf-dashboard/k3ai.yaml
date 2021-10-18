@@ -1,0 +1,14 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: KF-Dashboard
+  desc: "Your Kubeflow deployment includes a central dashboard that provides quick access to the Kubeflow components deployed in your cluster. The dashboard includes the following features:"
+  tag: kubeflow
+  version: latest
+  status: "Available"
+resources:
+- ../../common/kubeflow
+- ../../common/cert-manager
+- ../../common/istio
+- ../../common/knative
+- base/

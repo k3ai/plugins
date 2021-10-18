@@ -1,0 +1,14 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: kfam
+  desc: "Profile Controller and the Kubeflow Access-Management (KFAM) official Kubeflow components"
+  tag: kubeflow
+  version: latest
+  status: "Available"
+resources:
+- ../../common/kubeflow
+- ../../common/cert-manager
+- ../../common/istio
+- ../../common/knative
+- base/
