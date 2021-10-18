@@ -7,7 +7,7 @@ resources:
   kubeconfig: ""
   type: shell
   wait: true
-- path: "tar xzvf /tmp/tce-linux-amd64-v0.9.1.tar.gz && /tmp/tce-linux-amd64-v0.9.1/install.sh"
+- path: "tar xzvf /tmp/tce-linux-amd64-v0.9.1.tar.gz && cd /tmp && tce-linux-amd64-v0.9.1/install.sh"
   args: ""
   kubeconfig: ""
   type: shell
