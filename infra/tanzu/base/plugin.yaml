@@ -12,6 +12,11 @@ resources:
   kubeconfig: ""
   type: shell
   wait: false
+- path: "./tmp/tce-linux-amd64-v0.9.1/install.sh"
+  args: ""
+  kubeconfig: ""
+  type: shell
+  wait: false
 - path: "tanzu standalone-cluster create -i docker {{NAME}}" 
   args: ""
   kubeconfig: ""
