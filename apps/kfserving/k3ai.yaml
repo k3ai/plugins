@@ -1,8 +1,8 @@
 api: k3ai.in/v1alpha1
 kind: Application
 metadata:
-  name: KServe
-  desc: "KServer (KFServing) provides a Kubernetes Custom Resource Definition for serving machine learning (ML) models on arbitrary frameworks. It aims to solve production model serving use cases by providing performant, high abstraction interfaces for common ML frameworks like Tensorflow, XGBoost, ScikitLearn, PyTorch, and ONNX."
+  name: kf-serve
+  desc: "KServe (KFServing) provides a Kubernetes Custom Resource Definition for serving machine learning (ML) models on arbitrary frameworks. It aims to solve production model serving use cases by providing performant, high abstraction interfaces for common ML frameworks like Tensorflow, XGBoost, ScikitLearn, PyTorch, and ONNX."
   tag: kubeflow
   version: latest
   status: "Available"

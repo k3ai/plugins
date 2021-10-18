@@ -1,7 +1,7 @@
 api: k3ai.in/v1alpha1
 kind: Application
 metadata:
-  name: kfam
+  name: kf-am
   desc: "Profile Controller and the Kubeflow Access-Management (KFAM) official Kubeflow components"
   tag: kubeflow
   version: latest

@@ -1,7 +1,7 @@
 api: k3ai.in/v1alpha1
 kind: Application
 metadata:
-  name: KFP-T
+  name: kf-pt
   desc: "Kubeflow Pipelines (Tekton Backend) is a platform for building and deploying portable, scalable machine learning (ML) workflows based on Docker containers."
   tag: kubeflow
   version: latest
