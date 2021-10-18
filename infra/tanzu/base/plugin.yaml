@@ -22,4 +22,4 @@ resources:
   kubeconfig: ""
   type: shell
   wait: true
-  remove: "tanzu cluster delete {{name}}"
+  remove: "tanzu standalone-cluster delete {{name}}"
