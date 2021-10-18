@@ -3,7 +3,7 @@ kind: Infra
 metadata:
   name: Tanzu
   desc: "Tanzu Community Edition is a fully-featured, easy to manage, Kubernetes platform for learners and users. It is a freely available, community supported, and open source distribution of VMware Tanzu."
-  tag: infrastructure
+  tag: hybrid
   version: latest
   status: "In Development"
 resources:

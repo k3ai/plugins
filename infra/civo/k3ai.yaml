@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Infra
+metadata:
+  name: civo
+  desc: "The first cloud native service provider powered only by Kubernetes."
+  tag: cloud
+  version: latest
+  status: "Available"
+resources:
+- base/

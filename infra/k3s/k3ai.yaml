@@ -3,7 +3,7 @@ kind: Infra
 metadata:
   name: k3s
   desc: "K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances."
-  tag: infrastructure
+  tag: local
   version: latest
   status: "Available"
 resources:

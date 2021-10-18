@@ -3,7 +3,7 @@ kind: Infra
 metadata:
   name: "EKS-A"
   desc: "Amazon EKS Anywhere is a new deployment option for Amazon EKS that allows customers to create and operate Kubernetes clusters on customer-managed infrastructure, supported by AWS."
-  tag: infrastructure
+  tag: hybrid
   version: v0.5.0
   status: "Available"
 resources:
