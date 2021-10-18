@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "create ns argo"
+  args: ""
+  type: kubectl
+  wait: false
+

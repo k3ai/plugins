@@ -1,0 +1,11 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "apply -n argo -f https://raw.githubusercontent.com/argoproj/argo-workflows/master/manifests/quick-start-postgres.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+# - path: post
+#   args: "kubectl patch vs ml-pipeline-ui  -n kubeflow -p $'spec:\n host: LoadBalancer'"
+#   type: shell
