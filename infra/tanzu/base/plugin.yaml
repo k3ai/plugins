@@ -2,12 +2,12 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: " curl  -Lo https://github.com/vmware-tanzu/community-edition/releases/download/v0.9.1/tce-linux-amd64-v0.9.1.tar.gz"
+- path: " curl -Lo /tmp/tce-linux-amd64-v0.9.1.tar.gz https://github.com/vmware-tanzu/community-edition/releases/download/v0.9.1/tce-linux-amd64-v0.9.1.tar.gz"
   args: ""
   kubeconfig: ""
   type: shell
   wait: true
-- path: "tar xzvf tce-linux-amd64-v.0.9.1.tar.gz && tce-linux-amd64-v0.9.1/install.sh"
+- path: "tar xzvf /tmp/tce-linux-amd64-v.0.9.1.tar.gz && /tmp/tce-linux-amd64-v0.9.1/install.sh"
   args: ""
   kubeconfig: ""
   type: shell
