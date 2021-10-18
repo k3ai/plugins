@@ -20,5 +20,6 @@ resources:
 - path: "tanzu standalone-cluster create -i docker {{NAME}}" 
   args: ""
   kubeconfig: ""
+  type: shell
   wait: true
   remove: "tanzu cluster delete {{name}}"
