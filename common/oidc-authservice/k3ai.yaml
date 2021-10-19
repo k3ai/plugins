@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: oidc-authservice
+  desc: "oidc-authservice component for Kubeflow"
+  tag: kubeflow
+  version: latest
+resources:
+- base/

@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: dex
+  desc: "dex component for Kubeflow"
+  tag: kubeflow
+  version: latest
+resources:
+- base/
