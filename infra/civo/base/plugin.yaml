@@ -2,10 +2,10 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644 --disable traefik"
+- path: "kubernetes create {{name}} --switch --wait"
   args: ""
   kubeconfig: "/etc/rancher/k3s/k3s.yaml"
   type: shell
   wait: true
-  remove: "k3s-uninstall.sh"
+  remove: "kubernetes remove {{name}}"
 
