@@ -8,5 +8,5 @@ metadata:
   status: "Available"
 resources:
 - ../../common/minio
-- ../../commond/postgresql
+- ../../common/postgresql
 - base/
