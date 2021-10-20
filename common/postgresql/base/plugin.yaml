@@ -2,12 +2,25 @@ api: k3ai.in/v1alpha1
 kind: Application
 
 resources:
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/kubeflow-namespace/base"
-  type: kustomize
-  wait: false
-- path: "https://github.com/kubeflow/manifests"
-  args: "common/kubeflow-roles/base"
-  type: kustomize
-  wait: false
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/postgresql/overlays/configmap.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/postgresql/overlays/pv.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/postgresql/overlays/secret.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/postgresql/overlays/statefulset.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/postgresql/overlays/service.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+
 

@@ -2,8 +2,20 @@ api: k3ai.in/v1alpha1
 kind: Application
 
 resources:
-- path: "create ns argo"
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/minio/overlays/pv.yaml"
   args: ""
   type: kubectl
-  wait: false
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/minio/overlays/secret.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/minio/overlays/service.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/minio/overlays/statefulset.yaml"
+  args: ""
+  type: kubectl
+  wait: true
 

@@ -7,4 +7,6 @@ metadata:
   version: latest
   status: "Available"
 resources:
+- ../../common/minio
+- ../../commond/postgresql
 - base/
