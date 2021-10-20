@@ -6,7 +6,7 @@ resources:
   args: ""
   type: helm
   wait: true
-- path: "create namespace airflow-workloads"
+- path: "create namespace airflow"
   args: ""
   type: kubectl
   wait: true
