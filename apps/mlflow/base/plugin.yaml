@@ -1,0 +1,17 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "repo add apache-airflow https://airflow.apache.org"
+  args: ""
+  type: helm
+  wait: true
+- path: "create namespace airflow"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "install airflow apache-airflow/airflow --namespace airflow"
+  args: ""
+  type: helm
+  wait: true
+  remove: ""

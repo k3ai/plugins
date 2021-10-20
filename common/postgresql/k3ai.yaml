@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: postgresql
+  desc: "ostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance."
+  tag: sql
+  version: latest
+resources:
+- base/

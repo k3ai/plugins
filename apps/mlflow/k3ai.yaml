@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: MlFlow
+  desc: "MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry"
+  tag: mlflow
+  version: latest
+  status: "Available"
+resources:
+- base/

@@ -1,0 +1,9 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: minio
+  desc: "MinIO offers high-performance, S3 compatible object storage.Native to Kubernetes, MinIO is the only object storage suite available on every public cloud, every Kubernetes distribution, the private cloud and the edge."
+  tag: minio
+  version: latest
+resources:
+- base/
