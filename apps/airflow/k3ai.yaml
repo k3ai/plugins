@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: Airflow
+  desc: "Airflow is a platform created by the community to programmatically author, schedule and monitor workflows."
+  tag: airflow
+  version: latest
+  status: "Available"
+resources:
+- base/
