@@ -10,7 +10,7 @@ resources:
   args: ""
   type: kubectl
   wait: true
-- path: "helm install airflow apache-airflow/airflow --namespace airflow"
+- path: "install airflow apache-airflow/airflow --namespace airflow"
   args: ""
   type: helm
   wait: true
