@@ -3,10 +3,6 @@ kind: Application
 
 resources:
 - path: "https://github.com/kubeflow/manifests"
-  args: "common/knative/knative-serving/overlays/gateways"
-  type: kustomize
-  wait: true
-- path: "https://github.com/kubeflow/manifests"
   args: "common/knative/knative-eventing/base"
   type: kustomize
   wait: true
@@ -16,6 +12,10 @@ resources:
   wait: true
 - path: "https://github.com/kubeflow/manifests"
   args: "common/istio-1-9/cluster-local-gateway/base"
+  type: kustomize
+  wait: true
+- path: "https://github.com/kubeflow/manifests"
+  args: "common/knative/knative-serving/overlays/gateways"
   type: kustomize
   wait: true
 
