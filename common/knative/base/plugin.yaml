@@ -3,6 +3,10 @@ kind: Application
 
 resources:
 - path: "https://github.com/kubeflow/manifests"
+  args: "common/knative/knative-serving/overlays/gateways"
+  type: kustomize
+  wait: false
+- path: "https://github.com/kubeflow/manifests"
   args: "common/knative/knative-eventing/base"
   type: kustomize
   wait: true
