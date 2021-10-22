@@ -11,6 +11,6 @@ resources:
 - ../../common/cert-manager
 - ../../common/istio
 - ../../common/oidc-authservice
-- ../../dex
+- ../../common/dex
 - ../../common/knative
 - base/
