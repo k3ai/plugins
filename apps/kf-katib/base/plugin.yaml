@@ -10,6 +10,7 @@ resources:
   args: "apps/katib/upstream/installs/katib-with-kubeflow"
   type: kustomize
   wait: true
-- path: post
-  args: "kubectl patch svc katib-ui  -n kubeflow -p $'spec:\n type: LoadBalancer'"
-  type: shell
+- path: "delete svc katib-ui -n kubeflow"
+  type: kubectl
+- path: "expose deployment katib-ui --type=NodePort --target-port=8080  --port=80 -n kubeflow"
+  type: kubectl
