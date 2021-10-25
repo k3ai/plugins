@@ -10,7 +10,7 @@ resources:
   args: ""
   type: kubectl
   wait: true
-- path: "install airflow apache-airflow/airflow --namespace airflow --ports.airflowUI=8081"
+- path: "install airflow apache-airflow/airflow --namespace airflow --set web.service.type=NodePort --set web.service.nodePort=30200"
   args: ""
   type: helm
   wait: true

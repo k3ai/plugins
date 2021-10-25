@@ -5,19 +5,20 @@ nodes:
   # port forward 80 on the host to 80 on this node
   extraPortMappings:
   # Kubeflow Pipelines
-  - containerPort: 30100
+  - containerPort: 3000
     hostPort: 3000
-  # Kubeflow Katib
-  - containerPort: 30200
-    hostPort: 8080
+    listenAddress: "0.0.0.0"
   # MLFLow
-  - containerPort: 30500
+  - containerPort: 5000
     hostPort: 5000
+    listenAddress: "0.0.0.0"
   # Airflow
-  - containerPort: 30800
-    hostPort: 8081
+  - containerPort: 8080
+    hostPort: 8080
+    listenAddress: "0.0.0.0"
   # Jupyter
-  - containerPort: 30900
+  - containerPort: 8888
     hostPort: 8888
+    listenAddress: "0.0.0.0"
   
 
