@@ -12,9 +12,9 @@ resources:
   type: kubectl
 - path: "apply -f https://raw.githubusercontent.com/kubeflow/kfp-tekton/master/install/v1.0.0/kfp-tekton.yaml"
   type: kubectl
-- path: "wait pods -l application-crd-id=kubeflow-pipelines -n tekton-pipelines --for condition=Ready --timeout=1800s"
+- path: "wait pods -l application-crd-id=kubeflow-pipelines -n kubeflow --for condition=Ready --timeout=1800s"
   args: ""
   type: kubectl
   wait: true
-- path: "patch svc ml-pipeline-ui -n tekton-pipelines --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30901}]'"
+- path: "patch svc ml-pipeline-ui -n kubeflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30901}]'"
   type: kubectl
