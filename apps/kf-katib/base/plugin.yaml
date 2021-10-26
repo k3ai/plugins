@@ -10,8 +10,6 @@ resources:
   args: "apps/katib/upstream/installs/katib-with-kubeflow"
   type: kustomize
   wait: true
-- path: "delete svc katib-ui -n kubeflow"
-  type: kubectl
 - path: "patch svc airflow-webserver -n airflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30500}]'"
   type: kubectl
 # - path: "get svc airflow-webserver -n airflow -o=jsonpath='{.spec.ports[?(@.port==8080)].nodePort}'"
