@@ -6,6 +6,12 @@ resources:
   args: ""
   type: kubectl
   wait: true
+- path: "patch cm feature-flags -n tekton-pipelines -p '{\"data\":{\"enable-custom-tasks\": \"true\", \"enable-api-fields\": \"alpha\"}}'"
+  type: kubectl
+- path: "apply --selector kubeflow/crd-install=true -f https://raw.githubusercontent.com/kubeflow/kfp-tekton/master/install/v1.0.0/kfp-tekton.yaml "
+  type: kubectl
+- path: "apply -f https://raw.githubusercontent.com/kubeflow/kfp-tekton/master/install/v1.0.0/kfp-tekton.yaml"
+  type: kubectl
 - path: "wait pods -l application-crd-id=kubeflow-pipelines -n tekton-pipelines --for condition=Ready --timeout=1800s"
   args: ""
   type: kubectl
