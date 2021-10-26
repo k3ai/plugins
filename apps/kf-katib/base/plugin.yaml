@@ -2,10 +2,6 @@ api: k3ai.in/v1alpha1
 kind: Application
 
 resources:
-- path: "create ns kubeflow"
-  args: ""
-  type: kubectl
-  wait: false
 - path: "https://github.com/kubeflow/manifests"
   args: "apps/katib/upstream/installs/katib-with-kubeflow"
   type: kustomize
