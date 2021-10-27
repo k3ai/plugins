@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: KF-usernamespace
+  desc: "Kubeflow user namespace. This component allow multi-users access."
+  tag: kubeflow
+  version: latest
+  status: "Available"
+resources:
+- base/
