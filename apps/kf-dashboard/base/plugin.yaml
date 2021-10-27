@@ -3,7 +3,7 @@ kind: Application
 
 resources:
 - path: "https://github.com/kubeflow/manifests"
-  args: "apps/kfserving/upstream/overlays/kubeflow"
+  args: "apps/centraldashboard/upstream/overlays/istio"
   type: kustomize
   wait: true
 - path: "patch svc centraldashboard -n kubeflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30000}]'"
