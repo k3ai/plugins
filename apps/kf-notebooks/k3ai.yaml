@@ -13,4 +13,5 @@ resources:
 - ../../dex
 - ../../common/knative
 - ../../common/kubeflow
+- ../../apps/kf-am
 - base/
