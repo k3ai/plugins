@@ -2,9 +2,9 @@ api: k3ai.in/v1alpha1
 kind: Application
 
 resources:
-- path: "https://github.com/kubeflow/manifests"
-  args: "apps/training-operator/upstream/overlays/kubeflow"
-  type: kustomize
+- path: "apply -k github.com/kubeflow/training-operator/manifests/overlays/standalone?"
+  args: "ref=v1.3.0"
+  type: kubectl
   wait: true
 # - path: post
 #   args: "kubectl patch svc katib-ui  -n kubeflow -p $'spec:\n type: LoadBalancer'"

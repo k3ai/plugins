@@ -6,6 +6,5 @@ resources:
   args: "apps/kfserving/upstream/overlays/kubeflow"
   type: kustomize
   wait: true
-# - path: post
-#   args: "kubectl patch svc katib-ui  -n kubeflow -p $'spec:\n type: LoadBalancer'"
-#   type: shell
+- path: "patch svc centraldashboard -n kubeflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30000}]'"
+  type: kubectl

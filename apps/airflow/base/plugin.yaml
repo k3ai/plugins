@@ -10,8 +10,11 @@ resources:
   args: ""
   type: kubectl
   wait: true
-- path: "install airflow apache-airflow/airflow --namespace airflow --set web.service.type=NodePort --set web.service.nodePort=30200"
+- path: "install airflow apache-airflow/airflow --namespace airflow {{extra}}"
   args: ""
   type: helm
   wait: true
   remove: ""
+- path: "patch svc kairflow-webserver -n airflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30800}]'"
+  type: kubectl"
+

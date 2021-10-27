@@ -12,5 +12,4 @@ resources:
 - ../../common/istio
 - ../../common/oidc-authservice
 - ../../common/dex
-- ../../common/knative
 - base/

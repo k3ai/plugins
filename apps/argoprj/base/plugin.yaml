@@ -6,6 +6,5 @@ resources:
   args: ""
   type: kubectl
   wait: true
-# - path: post
-#   args: "kubectl patch vs ml-pipeline-ui  -n kubeflow -p $'spec:\n host: LoadBalancer'"
-#   type: shell
+- path: "patch svc argo-server -n argo --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":32746}]'"
+  type: kubectl
