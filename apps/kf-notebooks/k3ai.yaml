@@ -7,11 +7,12 @@ metadata:
   version: latest
   status: "Available"
 resources:
+- ../../common/kubeflow
 - ../../common/cert-manager
 - ../../common/istio
 - ../../common/oidc-authservice
-- ../../dex
-- ../../common/knative
-- ../../common/kubeflow
-- ../../apps/kf-am
+- ../../common/dex
+- ../../common/kf-userns
+- ../../common/kfam
+- ../../common/kf-volumeapps
 - base/
