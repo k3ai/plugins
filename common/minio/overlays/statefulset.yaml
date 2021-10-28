@@ -37,7 +37,6 @@ spec:
               key: root_password
         ports:
         - containerPort: 9000
-        command: ["/bin/bash","mkdir /data/mlflow"]
   volumeClaimTemplates:
   - metadata:
       name: pvc
