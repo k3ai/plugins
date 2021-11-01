@@ -1,0 +1,13 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/jlab/overlays/deployment.yaml"
+  args: ""
+  type: kubectl
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/jlab/overlays/pvc.yaml"
+  args: ""
+  type: kubectl
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/jlab/overlays/service.yaml"
+  args: ""
+  type: kubectl

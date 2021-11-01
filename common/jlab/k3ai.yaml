@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Application
+metadata:
+  name: jlab
+  desc: "Jupyter Lab is..."
+  tag: jupyter
+  version: latest
+  status: "Available"
+resources:
+- base/

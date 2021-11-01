@@ -5,6 +5,6 @@ metadata:
   desc: "The first cloud native service provider powered only by Kubernetes."
   tag: cloud
   version: latest
-  status: "Available"
+  status: "In Development"
 resources:
 - base/
