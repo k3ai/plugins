@@ -1,0 +1,13 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "create namespace jupyter"
+  args: ""
+  type: kubectl
+- path: "pip install great_expectations"
+  args: ""
+  type: shell
+  wait: true
+
+

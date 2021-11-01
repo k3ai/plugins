@@ -15,6 +15,6 @@ resources:
   type: helm
   wait: true
   remove: ""
-- path: "patch svc kairflow-webserver -n airflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30800}]'"
+- path: "patch svc airflow-webserver -n airflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30800}]'"
   type: kubectl"
 
