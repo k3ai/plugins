@@ -1,7 +1,7 @@
 api: k3ai.in/v1alpha1
 kind: Application
 metadata:
-  name: "great expectations"
+  name: "great-expectations"
   desc: "Great Expectations is a shared, open standard for data quality. It helps data teams eliminate pipeline debt, through data testing, documentation, and profiling."
   tag: jupyter
   version: latest
