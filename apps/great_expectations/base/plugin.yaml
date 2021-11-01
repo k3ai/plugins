@@ -5,8 +5,16 @@ resources:
 - path: "create namespace jupyter"
   args: ""
   type: kubectl
-- path: "pip install great_expectations"
-  args: ""
+- path: "exec deployment/jupyterlab"
+  args: "pip install great_expectations airflow-provider-great-expectations"
+  type: kubectl
+  wait: true
+- path: "exec deployment/jupyterlab"
+  args: "great_expectations airflow-provider-great-expectations"
+  type: shell
+  wait: true
+- path: "exec deployment/jupyterlab"
+  args: "great_expectations init"
   type: shell
   wait: true
 
