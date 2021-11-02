@@ -1,7 +1,7 @@
 api: k3ai.in/v1alpha1
 kind: Application
 metadata:
-  name: "Argo Workflow"
+  name: "Argo-Workflow"
   desc: "Kubeflow settings for various sub-configurations"
   tag: argo
   version: latest
