@@ -8,5 +8,4 @@ metadata:
   status: "Available"
 resources:
 - ../../common/argoprj
-- ../../common/istio
 - base/
