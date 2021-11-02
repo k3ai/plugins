@@ -5,7 +5,7 @@ metadata:
   desc: "Great Expectations is a shared, open standard for data quality. It helps data teams eliminate pipeline debt, through data testing, documentation, and profiling."
   tag: jupyter
   version: latest
-  status: "Available"
+  status: "In Development"
 resources:
 - ../../common/jlab
 - base/
