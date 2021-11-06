@@ -5,6 +5,6 @@ metadata:
   desc: "k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker."
   tag: local
   version: latest
-  status: "In Development"
+  status: "Available"
 resources:
 - base/
