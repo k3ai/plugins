@@ -1,0 +1,10 @@
+api: k3ai.in/v1alpha1
+kind: Infra
+metadata:
+  name: k3d
+  desc: "k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker."
+  tag: local
+  version: latest
+  status: "In Development"
+resources:
+- base/

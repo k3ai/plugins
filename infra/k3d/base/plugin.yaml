@@ -1,0 +1,11 @@
+api: k3ai.in/v1alpha1
+kind: Infra
+
+resources:
+- path: "curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash && k3d cluster create {{name}}"
+  args: ""
+  kubeconfig: "/k3d-default.yaml"
+  type: shell
+  wait: true
+  remove: "k3d cluster delete {{name}}"
+
