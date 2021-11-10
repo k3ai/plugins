@@ -24,7 +24,7 @@ spec:
         - --workers=2
         env:
         - name: MLFLOW_S3_ENDPOINT_URL
-          value: http://minio-service:9000/
+          value: http://minio-service.default.svc.cluster.local:9000/
         - name: AWS_ACCESS_KEY_ID
           valueFrom:
             secretKeyRef:
