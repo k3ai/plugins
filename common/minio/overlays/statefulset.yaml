@@ -23,7 +23,7 @@ spec:
         - /data
         volumeMounts:
         - name: pvc
-          mountPath: '/data/mlflow'
+          mountPath: '/data'
         env:
         - name: MINIO_ROOT_USER
           valueFrom:
