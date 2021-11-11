@@ -20,5 +20,4 @@ resources:
   wait: true
 - path: "patch svc ml-pipeline-ui -n kubeflow --type='json' -p '[{\"op\":\"replace\",\"path\":\"/spec/type\",\"value\":\"NodePort\"},{\"op\":\"replace\",\"path\":\"/spec/ports/0/nodePort\",\"value\":30900}]'"
   type: kubectl
-# - path: "get svc airflow-webserver -n airflow -o=jsonpath='{.spec.ports[?(@.port==8080)].nodePort}'"
-#   type: kubectl
+
