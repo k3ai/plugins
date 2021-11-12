@@ -18,7 +18,7 @@ resources:
   type: shell
   wait: false
 - path: "tanzu standalone-cluster create -i {{extras}} {{name}}" 
-  args: ""
+  args: "docker"
   kubeconfig: ""
   type: shell
   wait: true
