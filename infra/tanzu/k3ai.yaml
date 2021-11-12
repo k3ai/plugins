@@ -5,6 +5,6 @@ metadata:
   desc: "Tanzu Community Edition is a fully-featured, easy to manage, Kubernetes platform for learners and users. It is a freely available, community supported, and open source distribution of VMware Tanzu."
   tag: hybrid
   version: latest
-  status: "In Development"
+  status: "Available"
 resources:
 - base/
