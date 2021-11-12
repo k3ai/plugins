@@ -6,7 +6,7 @@ resources:
   args: ""
   type: shell
   wait: false
-- path: "wget https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v0.5.0/linux/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -P /tmp/eksctla && tar -xzvf /tmp/eksctla/eksctl-anywhere-v0.5.0-linux-amd64.tar.gz -C /tmp/eksctla && sleep 2 && sudo mv /tmp/eksctla/eksctl-anywhere /usr/local/bin/eksctl-anywhere"
+- path: "wget https://anywhere-assets.eks.amazonaws.com/releases/eks-a/1/artifacts/eks-a/v0.6.0/linux/eksctl-anywhere-v0.6.0-linux-amd64.tar.gz -P /tmp/eksctla && tar -xzvf /tmp/eksctla/eksctl-anywhere-v0.6.0-linux-amd64.tar.gz -C /tmp/eksctla && sleep 2 && sudo mv /tmp/eksctla/eksctl-anywhere /usr/local/bin/eksctl-anywhere"
   args: ""
   kubeconfig: ""
   type: shell
