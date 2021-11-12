@@ -1,0 +1,15 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "create namespace jupyter"
+  args: ""
+  type: kubectl
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/apps/jupyter/overlay/deployment.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/apps/jupyter/overlay/service.yaml"
+  args: ""
+  type: kubectl
+  wait: true
