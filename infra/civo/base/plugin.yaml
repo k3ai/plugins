@@ -2,9 +2,9 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "{{civo}} apikey add {{name}} {{key}} && {{civo}} kubernetes create {{name}} {{extras}} --wait && {{civo}} kubernetes show kube"
+- path: "{{civo}} apikey add {{name}} {{key}} && {{civo}} kubernetes create {{name}} {{extras}}"
   args: ""
   type: shell
   wait: true
-  remove: "{{civo}} kubernetes remove {{name}}"
+  remove: "{{civo}} kubernetes remove {{name}} {{extras}} -y"
 
