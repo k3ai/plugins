@@ -2,10 +2,9 @@ api: k3ai.in/v1alpha1
 kind: Infra
 
 resources:
-- path: "kubernetes create {{name}} --switch --wait"
+- path: "{{civo}} apikey add {{name}} {{key}} && {{civo}} kubernetes create {{name}} {{extras}} --wait && {{civo}} kubernetes show kube"
   args: ""
-  kubeconfig: "/etc/rancher/k3s/k3s.yaml"
   type: shell
   wait: true
-  remove: "kubernetes remove {{name}}"
+  remove: "{{civo}} kubernetes remove {{name}}"
 
