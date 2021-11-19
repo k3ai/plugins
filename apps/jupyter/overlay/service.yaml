@@ -5,7 +5,7 @@ metadata:
   namespace: jupyter
 spec:
   selector:
-    app: jupyter-srv
+    name: jupyterlab
   ports:
     - name: jupyter
       port: 8888
