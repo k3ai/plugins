@@ -7,7 +7,7 @@ resources:
   type: shell
   wait: true
   remove: "{{civo}} kubernetes remove {{name}} {{region}} -y"
-- path: "{{civo}} kubernetes create {{name}} {{extras}} --wait"
+- path: "{{civo}} kubernetes create {{name}} {{extras}}"
   args: ""
   type: shell
   wait: true
