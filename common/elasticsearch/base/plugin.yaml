@@ -1,0 +1,13 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/elasticsearch/overlays/service.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+- path: "apply -f https://raw.githubusercontent.com/k3ai/plugins/main/common/elasticsearch/overlays/statefulset.yaml"
+  args: ""
+  type: kubectl
+  wait: true
+

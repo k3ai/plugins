@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rubrix
+  labels:
+    app: rubrix
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rubrix
+  template:
+    metadata:
+      labels:
+        app: rubrix
+    spec:
+      containers:
+      - name: rubrix
+        image:  recognai/rubrix:latest
+        resources:
+          limits:
+            cpu: 1000m
+          requests:
+            cpu: 100m
+        env:
+          - name: ELASTICSEARCH
+            value: http://elasticsearch:9200
+          - name: ELASTICSEARCH_HOSTS
+            value: '["http://elasticsearch:9200"]'
+          - name: MODULE_NAME
+            value: "rubrix.server.server"
+          - name: VARIABLE_NAME
+            value: "app"
+        ports:
+        - containerPort: 80
