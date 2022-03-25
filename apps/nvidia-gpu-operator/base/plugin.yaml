@@ -1,0 +1,14 @@
+api: k3ai.in/v1alpha1
+kind: Application
+
+resources:
+- path: "repo add nvidia https://helm.ngc.nvidia.com/nvidia"
+  args: ""
+  type: helm
+  wait: true
+- path: "install --wait --generate-name -n gpu-operator --create-namespace nvidia/gpu-operator {{extra}}"
+  args: ""
+  type: helm
+  wait: true
+  remove: ""
+
