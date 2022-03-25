@@ -6,7 +6,7 @@ resources:
   args: ""
   type: helm
   wait: true
-- path: "install --wait --generate-name -n gpu-operator --create-namespace {{extra}} nvidia/gpu-operator"
+- path: "install --wait --generate-name -n gpu-operator --create-namespace nvidia/gpu-operator"
   args: ""
   type: helm
   wait: true
