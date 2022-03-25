@@ -2,11 +2,11 @@ api: k3ai.in/v1alpha1
 kind: Application
 
 resources:
-- path: "repo add nvidia https://helm.ngc.nvidia.com/nvidia"
+- path: "repo add nvidia https://helm.ngc.nvidia.com/nvidia --force-update"
   args: ""
   type: helm
   wait: true
-- path: "install --wait --generate-name -n gpu-operator --create-namespace nvidia/gpu-operator {{extra}}"
+- path: "install --wait --generate-name -n gpu-operator --create-namespace {{extra}} nvidia/gpu-operator"
   args: ""
   type: helm
   wait: true
